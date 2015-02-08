@@ -1,5 +1,5 @@
 VENDOR=htc
-DEVICE=zara
+DEVICE=zaracl
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 

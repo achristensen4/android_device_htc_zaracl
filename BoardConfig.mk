@@ -23,7 +23,7 @@
 # Inherit from common msm8960
 -include device/htc/msm8960-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/htc/zara
+LOCAL_PATH := device/htc/zaracl
 
 # Audio
 BOARD_HAVE_HTC_CSDCLIENT := true
@@ -74,7 +74,7 @@ BOARD_KERNEL_BASE := 0x80600000
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01608000
-TARGET_KERNEL_CONFIG := zara_defconfig
+TARGET_KERNEL_CONFIG := zaracl_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/msm8960
 
 # Radio
@@ -87,12 +87,12 @@ BOARD_USES_LEGACY_MMAP := true
 -include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-    device/htc/zara/sepolicy
+    device/htc/zaracl/sepolicy
 
 # Vold
 BOARD_VOLD_MAX_PARTITIONS := 39
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
-TARGET_OTA_ASSERT_DEVICE := zara
+TARGET_OTA_ASSERT_DEVICE := zaracl
 
 # Wifi
 BOARD_WLAN_DEVICE := bcmdhd
@@ -113,4 +113,4 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # inherit from the proprietary version
--include vendor/htc/zara/BoardConfigVendor.mk
+-include vendor/htc/zaracl/BoardConfigVendor.mk
