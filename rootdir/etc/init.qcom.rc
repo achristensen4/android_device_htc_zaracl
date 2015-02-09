@@ -66,6 +66,8 @@ on fs
     # create firmware mount points
     mkdir /devlog 0700 root root
 
+    mkdir /carrier 0770 system carrier
+
     # Create firmware linking directories
     mkdir /firmware 0771 system system
     mkdir /vendor 0771 system system
@@ -90,6 +92,9 @@ on post-fs-data
     symlink /mnt/qcks /data/qcks
     symlink /mnt/efs /data/efs
     symlink /mnt/securedata /data/secure/data
+
+    chown system carrier /carrier
+    chmod 0770 /carrier
 
     # QC audio/radio
     mkdir /data/audio 2775 media audio
