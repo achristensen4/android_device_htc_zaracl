@@ -1,2 +1,1 @@
-add_lunch_combo cm_zaracl-eng
 add_lunch_combo cm_zaracl-userdebug
