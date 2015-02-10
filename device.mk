@@ -105,4 +105,4 @@ PRODUCT_COPY_FILES += \
 
 
 # call the proprietary setup
-$(call inherit-product, vendor/htc/zaracl/zaracl-vendor.mk)
+$(call inherit-product, vendor/htc/zara/zara-vendor.mk)

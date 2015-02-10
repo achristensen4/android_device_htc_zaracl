@@ -113,4 +113,4 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # inherit from the proprietary version
--include vendor/htc/zaracl/BoardConfigVendor.mk
+-include vendor/htc/zara/BoardConfigVendor.mk
