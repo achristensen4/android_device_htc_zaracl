@@ -27,20 +27,15 @@
 # inherit from common zara-common
 include device/htc/zara-common/BoardConfigCommon.mk
 
+# HTC Desire 601 CDMA
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := zaracl
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := zara
 
-# Recovery
-TARGET_RECOVERY_FSTAB := device/htc/zaracl/rootdir/etc/fstab.qcom
-
-# Filesystem
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1912601600
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 5100273664
-BOARD_CACHEIMAGE_PARTITION_SIZE := 251657728
-BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_KERNEL_CONFIG := zaracl_defconfig
 
 # inherit from the proprietary version
 include vendor/htc/zara/BoardConfigVendor.mk
