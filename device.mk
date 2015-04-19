@@ -42,7 +42,6 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/htc/zaracl/rootdir/etc/fstab.qcom:root/fstab.qcom \
     device/htc/zaracl/rootdir/etc/init.qcom.rc:root/init.qcom.rc
 
 # call the proprietary setup
