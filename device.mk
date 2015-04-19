@@ -17,6 +17,29 @@
 # Common zara-common configs
 $(call inherit-product, device/htc/zara-common/zara-common.mk)
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
+    frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
+
+# NFC
+PRODUCT_PACKAGES += \
+    nfc.msm8960 \
+    libnfc \
+    libnfc_ndef \
+    libnfc_jni \
+    Nfc \
+    Tag \
+    com.android.nfc_extras
+
+ifeq ($(TARGET_BUILD_VARIANT),user)
+    NFCEE_ACCESS_PATH := device/htc/zaracl/nfc/nfcee_access.xml
+else
+    NFCEE_ACCESS_PATH := device/htc/zaracl/nfc/nfcee_access_debug.xml
+endif
+PRODUCT_COPY_FILES += \
+    $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml
+
 # Ramdisk
 PRODUCT_COPY_FILES += \
     device/htc/zaracl/rootdir/etc/fstab.qcom:root/fstab.qcom \
