@@ -6,8 +6,6 @@
 /dev/block/platform/msm_sdcc.1/by-name/radio	/firmware/radio vfat    ro,shortname=lower,fmask=111,context=u:object_r:firmware_file:s0 wait
 /dev/block/platform/msm_sdcc.1/by-name/adsp	/firmware/q6    	vfat    ro,shortname=lower,fmask=111,context=u:object_r:firmware_file:s0 wait
 
-/dev/block/platform/msm_sdcc.1/by-name/carrier  /carrier        vfat    nosuid,nodev,noatime,barrier=1,grpid wait
-
 /dev/block/platform/msm_sdcc.1/by-name/boot	/boot			emmc	defaults						defaults
 /dev/block/platform/msm_sdcc.1/by-name/recovery	/recovery	emmc	defaults						defaults
 /dev/block/platform/msm_sdcc.1/by-name/misc	/misc			emmc	defaults						defaults

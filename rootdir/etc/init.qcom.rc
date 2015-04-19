@@ -67,6 +67,8 @@ on fs
     mkdir /devlog 0700 root root
 
     mkdir /carrier 0770 system carrier
+    devwait emmc@carrier
+    mount ext4 emmc@carrier /carrier nosuid nodev noatime barrier=1,grpid
 
     # Create firmware linking directories
     mkdir /firmware 0771 system system
