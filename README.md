@@ -11,6 +11,7 @@ Copyright 2015 - The CyanogenMod Project
 | Memory                  | 1GB RAM                           |
 | Shipped Android Version | 4.2.2                             |
 | Storage                 | 8 GB                          |
+| NFC                	  | Yes                          |
 | MicroSD                 | Up to 64GB                       |
 | Battery                 | 2100 mAh                          |
 | Dimensions              | 134.5 x 66.7 x 9.9 mm         |
